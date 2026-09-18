@@ -36,6 +36,7 @@ import { MeshPacket } from '../models/MeshPacket.js';
 export const apiRouter = Router();
 
 // ==============================================================================
+<<<<<<< HEAD
 // 0. HEALTH CHECK / KEEP-ALIVE PING ENDPOINT
 // ==============================================================================
 apiRouter.get('/health', (req, res) => {
@@ -47,6 +48,8 @@ apiRouter.get('/health', (req, res) => {
 });
 
 // ==============================================================================
+=======
+>>>>>>> 5aca6751d3452bd9f94e454ed7f573427b5f8c75
 // 1. CRYPTOGRAPHIC KEY ENDPOINT
 // ==============================================================================
 apiRouter.get('/server-key', (req, res) => {
