@@ -1,0 +1,18 @@
+name: Keep Render Service Alive
+
+on:
+  schedule:
+    # Runs every 10 minutes to prevent Render free-tier spin-down (inactivity timeout is 15 mins)
+    - cron: '*/10 * * * *'
+  workflow_dispatch: # Allows manual trigger from GitHub Actions tab
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Render Backend
+        run: |
+          # Use the repository secret RENDER_SERVICE_URL if configured, or fallback to the URL below
+          URL="${{ secrets.RENDER_SERVICE_URL || 'https://your-app-name.onrender.com' }}"
+          echo "Pinging health check: $URL/api/health"
+          curl -s -f "$URL/api/health" || echo "Ping completed (endpoint reached or server waking up)."
