@@ -1,0 +1,27 @@
+{
+  "name": "upi-offline-mesh-js",
+  "version": "1.0.0",
+  "description": "Offline UPI via Bluetooth Mesh - JavaScript (Node.js) Demo Backend",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "node --watch src/app.js",
+    "test": "node --test tests/idempotencyConcurrency.test.js"
+  },
+  "keywords": [
+    "upi",
+    "offline-payments",
+    "mesh-network",
+    "cryptography",
+    "rsa-oaep",
+    "aes-gcm",
+    "idempotency"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1"
+  }
+}
