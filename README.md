@@ -310,5 +310,4 @@ This project is an educational simulator designed to run self-contained on a lap
 | In-Memory Key Generation | Hardware Security Module (HSM) or cloud KMS (AWS KMS, GCP KMS) |
 | Simulated Bluetooth Mesh | Physical Android BLE GATT / Wi-Fi Direct protocols |
 | In-Memory Ledger | Core Banking System (CBS) and NPCI / UPI Switch integration |
-#   u p i _ w i t h o u t _ i n t e r n e t  
- 
+#
